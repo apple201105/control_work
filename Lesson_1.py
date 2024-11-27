@@ -1,5 +1,10 @@
+import math
 
-a = int(input('Введите 1 число:'))
-b = int(input('Введите 2 число:'))
-c = int(input('Введите 3 число:'))
-print((a+b+c)/3)
+def circum_of_the_circle(r):
+    return math.pi * 2 * r
+def area_of_the_circle(r):
+    return math.pi * r ** 2
+
+r = int(input('Введите радиус:'))
+print(circum_of_the_circle(r))
+print(area_of_the_circle(r))
