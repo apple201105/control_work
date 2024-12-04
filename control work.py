@@ -20,3 +20,29 @@ else:
         print(' Первый обьем больше 2 обьема')
     else:
         print(' Второй обьем больше')
+
+
+2
+high = 7
+w = high + 2
+m = w //4
+for i in range(1, high+1):
+    if (i <= m):
+        print(" " * (m-i) + "*" * (2*i) + " " * (w-2*i-2*m) + "*" *(2*i) + " " * (m-i))
+    else:
+      print(" " * (i - 2*m+1) + "*" * (w-2*(i-2*m+1)) + " " * (i - 2*m+1))
+
+
+
+3
+k = int(input('введите число'))
+n = int(input('введите число'))
+
+def comparion(k, n):
+    if k < n:
+        print('всё хорошо')
+    elif k == n:
+            print('всё хорошо')
+    else:
+        print('ошибка')
+
