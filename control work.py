@@ -39,7 +39,7 @@ k = int(input('введите число'))
 n = int(input('введите число'))
 
 def comparion(k, n):
-    if k < n:
+    if k <= n:
         print('всё хорошо')
     elif k == n:
             print('всё хорошо')
