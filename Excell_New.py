@@ -7,7 +7,7 @@ column = ws.max_column
 Average_Column = 1
 for j in range(1, row+1):
     sum_row = 0
-    sum_int = 1
+    sum_int = 0
     for i in range(2, column+2):
         cell_obj = ws.cell(row=j, column=i)
         if j == 1 and (cell_obj.value is None or cell_obj.value == "Average"):
