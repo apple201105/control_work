@@ -22,8 +22,8 @@ for j in range(2, row_tab+1):# внешний цикл для строк
                 sum_row = sum_row + int(cell_obj.value)
                 sum_int = sum_int + 1
         if i == Average_Column: # если дошли до стобца для среднего значения, то делаем расчёт в эту ячейку
-            FIO = ws.cell(row=j, column=1)
-            print(FIO.value, "Сумма оценок = ", sum_row, 'Количество оценок - ', sum_int, 'Средний бал = ', sum_row/sum_int)
+           # FIO = ws.cell(row=j, column=1)
+            #print(FIO.value, "Сумма оценок = ", sum_row, 'Количество оценок - ', sum_int, 'Средний бал = ', sum_row/sum_int)
             cell_obj.value = sum_row/sum_int
 wb.save('список.xlsx')
 wb.close()
