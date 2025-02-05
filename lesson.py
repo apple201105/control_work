@@ -1,14 +1,11 @@
 import pandas as pd
+df_excel = pd.read_excel('Лист.xlsx')
+if df_excel.select_dtypes(include='number').empty:
+    print("В таблице нет числовых данных.")
+else:
+    df_excel['Среднее арифметическое'] = df_excel.mean(axis=1)
+    df_excel['Дисперсия'] = df.var(axis=1)
+    output_file_path = "output.xlsx"
+    df_excel.to_excel(output_file_path, index=False)
 
-data = {
-    'Name': ['Alice', 'Bob', 'Charlie'],
-    'Age': [25, 30, 35],
-    'City': ['New York', 'Los Angeles', 'Chicago']
-}
-df = pd.DataFrame(data)
-print(df)
-# Сохранение в CSV
-df.to_csv('output.csv', index=False)
-
-# Сохранение в Excel
-df.to_excel('output.xlsx', index=False)
+    print(f"Результаты сохранены в файл: {output_file_path}")
