@@ -10,15 +10,15 @@ def main():
         if choice == "0":
             show_message("Пока!")
             break
-        elif choice in ["1", "2", "3", "4"]:
+        elif choice in ["+", "-", "*", "/"]:
             a, b = get_numbers()
-            if choice == "1":
+            if choice == "+":
                 result = add(a, b)
-            elif choice == "2":
+            elif choice == "-":
                 result = subtract(a, b)
-            elif choice == "3":
+            elif choice == "*":
                 result = multiply(a, b)
-            elif choice == "4":
+            elif choice == "/":
                 result = divide(a, b)
             show_result(result)
         else:
