@@ -1,4 +1,4 @@
-# Controller (Контроллер) - управляет логикой  связывает модель с представлением
+
 from Model import add,subtract,multiply,divide
 from View import get_numbers,show_result, show_message, display_menu
 
